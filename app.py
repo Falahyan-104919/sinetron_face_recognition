@@ -82,4 +82,4 @@ def match_face():
         return jsonify({'match': False}), 200
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=20253, debug=True)
