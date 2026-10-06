@@ -3,10 +3,12 @@ import os
 import cv2
 import flask
 import numpy as np
+from apm_logging import setup_apm_logging
 from flask import Flask, jsonify, request
 from scipy.spatial.distance import cosine  # For cosine distance
 
 app = Flask(__name__)
+setup_apm_logging(app)
 
 # --- Configuration ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
