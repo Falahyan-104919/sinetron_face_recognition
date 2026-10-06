@@ -2,3 +2,5 @@ known_embeddings/
 models/
 uploads/
 .DS_Store
+__pycache__
+logs
